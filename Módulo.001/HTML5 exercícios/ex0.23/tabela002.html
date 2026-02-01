@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -25,15 +26,33 @@
         thead {
             background-color: lightgray;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: lightgray;
+        }
+
+        caption {
+            font-size: 26px;
+            background-color: lightgray;
+
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
+    
     <table>
+        <caption>População dos Estados Brasileiros</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -117,10 +136,12 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
-                <td>212 528 000</td>
+                <th scope="row" >Total de habitantes</th>
+                <td style="width: 50px;">212 528 000</td>
             </tr>
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui officia ipsum, nisi, error at dolorem distinctio ut voluptatibus ipsam laboriosam esse mollitia commodi excepturi quis asperiores molestiae fugiat obcaecati repellendus.lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis nulla molestiae odio accusamus, sequi itaque! Laudantium dolorum facere perferendis vel eum quas hic quaerat animi! Voluptatibus fugiat nesciunt vitae sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore ea omnis atque architecto similique odio facere qui itaque minus, repellat modi totam dolore voluptas unde accusamus. Temporibus eveniet assumenda dolores. lorem</p>
 </body>
 </html>
