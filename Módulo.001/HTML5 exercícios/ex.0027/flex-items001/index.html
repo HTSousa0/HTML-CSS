@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itens flexíveis</title>
+
+    <style>
+        div.container {
+            background-color: lightgray;
+            display: flex ;
+            flex-flow: row wrap;
+            height: 700px;
+            align-items: flex-start;
+        }
+
+        div.item {
+            background-color: lightpink;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+            flex-basis: 150px;
+            
+        }
+
+        div#item1 {
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item1">A</div>
+        <div class="item">Outro conteudo</div>
+        <div class="item">C</div>
+        <div class="item">CONTEUDODASDAFASEQWEQWDASDWAF</div>
+        <div class="item">E</div>
+        <div class="item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+    </div>
+    
+</body>
+</html>
